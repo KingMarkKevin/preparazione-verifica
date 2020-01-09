@@ -1,0 +1,19 @@
+<div class = "container">
+  <form class = "jumbotron">
+    <div class = "form-group">
+      <label for="inutile">Cose inutili:</label>
+      <input type = "text" name = "inutile" #inutile class = "form-control">
+    </div>
+    <div class = "form-group">
+      <label for="spam">Spam:</label>
+      <input type="text" name = "spam" #spam class = "form-control">
+    </div>
+    <div>
+      <input type = "submit" value = "Spamma" (click) = "spamma(inutile, spam)" class = "btn btn-primary form-control">
+    </div>
+  </form>
+</div>
+
+<div>
+  <li *ngFor = "let testo of articles"> {{testo}}</li>
+</div>
